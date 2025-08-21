@@ -1,0 +1,8 @@
+-- Add security question columns to existing Users table
+USE DegreePlanner;
+
+ALTER TABLE Users 
+ADD COLUMN security_question_1 VARCHAR(255),
+ADD COLUMN security_answer_1 VARCHAR(255),
+ADD COLUMN security_question_2 VARCHAR(255),
+ADD COLUMN security_answer_2 VARCHAR(255);

@@ -1,0 +1,43 @@
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.course-code {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.course-title {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.course-type {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.core-badge {
+  background-color: #e0f2ff;
+  color: #007acc;
+}
+
+.elective-badge {
+  background-color: #fdf3e6;
+  color: #d17b00;
+}

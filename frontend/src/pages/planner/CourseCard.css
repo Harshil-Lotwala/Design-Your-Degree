@@ -1,0 +1,121 @@
+.course-card {
+  width: 100%;
+  min-height: 120px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: grab;
+  border-left: 4px solid #ffd700;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.03) 0%, rgba(255, 237, 78, 0.03) 100%);
+  pointer-events: none;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #cbd5e0;
+}
+
+.course-card:active {
+  cursor: grabbing;
+}
+
+.course-code {
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.course-title {
+  font-size: 0.8rem;
+  color: #4b5563;
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-type {
+  font-size: 12px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 8px;
+  border-radius: 12px;
+  min-width: 30px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.tile-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-top: 6px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.status-badge.remaining {
+  background-color: #fa1543;
+  color: #000;
+}
+
+.status-badge.in-progress {
+  background-color: #3b82f6;
+}
+
+.status-badge.completed {
+  background-color: #22c55e;
+}
+
+/* Status dropdown styling */
+.status-select {
+  font-size: 11px;
+  padding: 2px 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #374151;
+  margin-top: 4px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.status-select option {
+  padding: 2px 4px;
+}
+

@@ -1,0 +1,87 @@
+h1,p {
+  font-family: var(--dal-font);
+  margin-bottom: 0.5rem;
+  color: var(--dal-black);
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--dal-white);
+  font-family: var(--dal-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.degree-overview-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.overview-placeholder {
+  width: 350px;
+  height: 200px;
+  background-color: var(--dal-gold);
+  border: 2px solid var(--dal-black);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--dal-black);
+}
+
+.major-minor-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.overview-label {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.dropdown-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dal-black);
+}
+
+.dropdown-group select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 1px solid var(--dal-black);
+  background-color: var(--dal-gold);
+}
+
+.summary-card {
+  background-color: var(--dal-gold);
+  border: 2px solid var(--dal-black);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,367 @@
+/* Shared box styling for sections like Add a Course, Electives, Program Options */
+.section-container,
+.picker-wrapper {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+@import "../dal-theme.css";
+
+.print-button {
+  margin: 10px 0;
+  padding: 8px 16px;
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Shared heading style */
+.section-container h2,
+.picker-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--dal-black);
+  text-align: center;
+}
+
+.picker-container select,
+.section-container select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.section-container label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #374151;
+}
+
+.section-container button {
+  background-color: var(--dal-gold);
+  color: white;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.section-container button:hover {
+  background-color: var(--dal-black);
+}
+
+/* Degree Planner Layout */
+.planner-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--dal-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planner-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--dal-black);
+}
+.year-section {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.year-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 2rem 0 1rem;
+  color: var(--dal-black);
+}
+
+.year-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.year-tab {
+  background-color: var(--dal-white);
+  border: 1px solid var(--dal-white);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.year-tab:hover {
+  background-color: var(--dal-white);
+}
+
+.year-tab.active {
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+  border-color: var(--dal-black);
+}
+.term-picker-container {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.term-picker-container label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+}
+
+.term-picker-container select {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--dal-white);
+  font-size: 1rem;
+}
+.dimmed-option {
+  color: var(--dal-white) !important;
+  background-color: var(--dal-black);
+}
+
+
+/* Grid Layout for Terms */
+.term-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.term-column {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 1.8rem;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 300px;
+  min-height: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.term-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+}
+
+.term-column:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.term-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  position: relative;
+}
+
+.term-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+}
+
+/* Course Card Styles */
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  min-height: 50px;
+}
+
+.course-card {
+  width: 100%;
+  max-width: 220px;
+  background-color: var(--dal-white);
+  border: 2px solid var(--dal-black);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 5px var(--dal-black);
+  transition: box-shadow 0.2s ease;
+  cursor: grab;
+  user-select: none;
+}
+
+.course-card:hover {
+  box-shadow: 0 4px 12px var(--dal-black);
+}
+
+.course-code {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--dal-black);
+  margin-bottom: 0.3rem;
+}
+
+.course-title {
+  font-size: 0.9rem;
+  color: var(--dal-gold);
+  margin-bottom: 0.25rem;
+}
+
+.course-type {
+  font-size: 0.75rem;
+  background-color: var(--dal-white);
+  color: #0369a1;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.section-container {
+  background-color: var(--dal-white);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--dal-black);
+  width: 100%;
+  max-width: 500px;
+}
+
+.section-container h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--dal-black);
+  text-align: center;
+}
+
+.section-container label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #374151;
+}
+
+.section-container select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--dal-white);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.section-container button {
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.section-container button:hover {
+  background-color: var(--dal-gold);
+}
+
+.term-filter-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.filter-container {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-style: sans-serif;
+}
+
+.filter-container label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+}
+
+.filter-container select {
+  padding: 0.2rem;
+  border-radius: 4px;
+  border: 1px solid var(--dal-white);
+  font-size: 1rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-top: 6px;
+  color: var(--dal-white);
+  font-weight: bold;
+}
+
+.status-badge.remaining {
+  background-color: #fa1543;
+  color: var(--dal-black);
+}
+
+.status-badge.in-progress {
+  background-color: #3b82f6;
+}
+
+.status-badge.completed {
+  background-color: #22c55e;
+}
+
+.add-course-actions {
+  color: var(--dal-black);
+  display: flex;
+  gap: 10.3rem;
+  margin-top: 1rem;
+}
+

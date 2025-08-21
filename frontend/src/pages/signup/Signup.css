@@ -1,0 +1,59 @@
+@import "../dal-theme.css";
+
+.signupPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .signupPage h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--dal-black);
+    font-weight: bold;
+  }
+  
+  .signupPage input,
+  .signupPage select {
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    border: 2px solid var(--dal-black);
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .signupPage button {
+    margin-top: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    border: 2px solid var(--dal-black);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .signupPage button:hover {
+    background-color:var(--dal-gold);
+  }
+  
+  .signupPage a {
+    margin-top: 12px;
+    color: var(--dal-black);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .signupPage a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--dal-gold);
+    color: var(--dal-black);
+    background-color: var(--dal-gold);
+  }
+  

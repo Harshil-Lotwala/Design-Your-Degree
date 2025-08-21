@@ -1,0 +1,62 @@
+@import "../dal-theme.css";
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .loginPage h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: bold;
+    color: var(--dal-black);
+  }
+  
+  .loginPage input {
+    width: 250px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    border: 2px solid var(--dal-black);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .loginPage input:focus {
+    border-color: #007BFF;
+  }
+  
+  .logInButton {
+    margin-top: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    border: 2px solid var(--dal-black);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .logInButton:hover {
+    background-color: var(--dal-gold);
+  }
+  
+  .loginPage a {
+    margin-top: 12px;
+    color: var(--dal-black);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .loginPage a:hover {
+    text-decoration: underline;
+    background-color: var(--dal-gold);
+  }
+  

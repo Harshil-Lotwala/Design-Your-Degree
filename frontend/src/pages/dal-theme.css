@@ -1,0 +1,36 @@
+:root {
+  --dal-black: #1a1a1a;
+  --dal-gold: #FFD400;
+  --dal-white: #ffffff;
+  --dal-font: 'Public Sans', sans-serif;
+}
+
+body {
+  font-family: var(--dal-font);
+  background-color: var(--dal-white);
+  color: var(--dal-black);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--dal-font);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dal-black);
+}
+
+button {
+  font-family: var(--dal-font);
+  background-color: transparent;
+  border: 2px solid var(--dal-black);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--dal-gold);
+  color: var(--dal-black);
+}

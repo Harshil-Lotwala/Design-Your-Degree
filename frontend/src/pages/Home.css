@@ -1,0 +1,59 @@
+@import "./dal-theme.css";
+
+.landingPage {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 100px; 
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .loginButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    background: none;
+    border: 2px solid var(--dal-black);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .landingPage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .landingPage h2 {
+    font-size: 1.2rem;
+    color:var(--dal-black);
+    margin-bottom: 2rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .buttonGroup button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid var(--dal-black);
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .buttonGroup button:hover {
+    background: var(--dal-gold);
+  }
+  
